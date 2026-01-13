@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <section>
+     <div class="box  py-5 ">
+        <div class="container mb-5  ">
+        <h1 class="text-center p-4 mb-4">Bookmarker</h1>
+
+    <div class="about shadow-lg p-3 mb-5  rounded p-4 ">
+        <div class="bookmark-body d-flex  justify-content-center p-3 py-4 mt-3 gap-3">
+            <i class="fa-solid fa-bookmark"></i>
+            <h2>Bookmark your favorite sites</h2>
+            <i class="fa-solid fa-bookmark"></i>
+        </div>
+        
+        <div class="sitename mb-3 ">
+        <label for="inputsitename" class="form-label"> 
+            <i class="fa-solid fa-book"></i>
+            Site Name
+        </label>
+        <input oninput="validationInput(this )" type="text" class="form-control" id="BookMarkName" placeholder="Bookmark Name">
+        <div class="invalid-feedback">
+            Site name must contain at least 3 characters
+          </div>
+    </div>
+
+        <div class="siteurl mb-4 ">
+        <label for="inputsiteurl" class="form-label"> 
+            <i class="fa-solid fa-link"></i>
+            Site URL
+        </label>
+     
+        <input oninput="validationInput(this )" type="url" class="form-control" id="BookMarkURL" placeholder="Website URL">
+        <div class="invalid-feedback">
+            Site url must be valid one
+          </div>
+    </div>
+
+         <button id="SubmitBtn" onclick="addbookmark()" type="button" class="btn btn-primary px-5 d-flex align-items-center justify-content-center m-auto shadow-lg ">Submit</button>
+    </div>
+
+
+    <table class="table text-center bg-light shadow-lg table-striped">
+    <thead>
+        <tr>
+            <th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+        </tr>
+     
+    </thead>
+    <tbody id="bodydata">
+      
+    
+
+    </tbody>
+
+    </table>
+
+        </div>
+     </div>
+
+
+    </section>
+
+
+
+<div class="box text-decoration-none"></div>
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

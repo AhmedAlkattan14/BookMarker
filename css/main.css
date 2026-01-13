@@ -1,0 +1,122 @@
+::selection{
+    background-color: #fec260;
+    color: #212529;
+}
+
+
+section{
+    background-color: #f3e7d5;
+}
+.box h1{
+    font-family: Pacifico, cursive;
+    color:rgb(53, 46, 40);
+    font-weight: 500;
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    position: relative;
+    z-index:99999;
+    
+}
+.box h1::before{
+    content: '';
+    position: absolute;
+    background-color: #fec260;
+    width: 24%;
+    height: 15%;
+    bottom: 0px;
+    right: 0;
+    left: 38%;
+    top: 65px;
+    z-index:-1;
+    transition: all 1s;
+}
+.box h1:hover::before{
+    height: 33%;
+    bottom: 0;
+    top: 45px;
+}
+
+.about{
+    background-color: #f3e7d5;
+}
+.about .bookmark-body h2{
+    font-family: Righteous, cursive;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    font-weight: 500;
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+}
+
+.about .bookmark-body i{
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 1.5625rem;
+}
+
+.sitename .form-label{
+    font-family: "PT Sans Caption", sans-serif;
+    color: #212529;
+    font-weight:900;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+.sitename .form-label i{
+    color: #212529;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1rem;
+}
+.siteurl .form-label{
+    font-family: "PT Sans Caption", sans-serif;
+    color: #212529;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+.siteurl .form-label i{
+    color: #212529;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1rem;
+}
+.about .btn{
+    background-color: #bb4120;
+    border:none;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+    transition: all 1s;
+    border: 1px solid black;
+    
+}
+.about .btn:hover{
+    background-color: #ffff;
+    border: 1px solid #bb4120;
+    color: #bb4120;
+}
+
+
+
+.table .btn1{
+    background-color: #8a9e23;
+    border: none;
+    
+}
+.table .btn1 a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.table .btn2{
+    background-color: #d30820;
+    border: none;
+    color: #fff;
+}
